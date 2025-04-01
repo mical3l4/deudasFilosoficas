@@ -3,7 +3,7 @@ usuario: u178928053_jimena
 contraseña: =T2NspU#r6I
 
 <?php
-$conexion= new mysqli("localhost", "u178928053_jimena", "2NspU#r6I", "u178928053_deudasf");
+$conexion= new mysqli("localhost", "u178928053_jimena", "T2NspU#r6I", "u178928053_deudasf");
 
 $sql = "create table usuario (
     id int primary key not null auto_increment,
