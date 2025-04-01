@@ -3,7 +3,7 @@ usuario: u178928053_jimena
 contraseña: =T2NspU#r6I
 
 <?php
-$conexion= new mysqli("localhost", "u178928053_jimena", "2NspU#r6I", "u178928053_deudasf")
+$conexion= new mysqli("localhost", "u178928053_jimena", "2NspU#r6I", "u178928053_deudasf");
 
 $sql = "create table usuario (
     id int primary key not null auto_increment,
@@ -26,13 +26,12 @@ $sql = "create table inicio_sesion (
 
 $conexion->query(query: $sql);
 
-$sql = "create table usuario (
+$sql ="create table publicaciones (
     id INT auto_increment primary key not null,
-    titulo varchar(300), 
+    titulo varchar(255), 
     descripcion text, 
     fecha date
-);
-";
-
+);"
+;
 $conexion->query(query: $sql);
 
