@@ -1,11 +1,7 @@
 <?php
-$servidor = "localhost";
-$usuario = "root"; 
-$contrasenha = ""; 
-$base_datos = "prueba1";
 
 //crea la conexion bd con php
-$conexion = new mysqli($servidor, $usuario, $contrasenha, $base_datos);
+$conexion= new mysqli("localhost", "u178928053_jimena", "=T2NspU#r6I", "u178928053_deudasf");
 
 // Verificar conexión
 if ($conexion->connect_error) {

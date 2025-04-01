@@ -1,8 +1,9 @@
-base: u178928053_deudasf
-usuario: u178928053_jimena
-contraseña: =T2NspU#r6I
-
 <?php
+/*base: u178928053_deudasf
+usuario: u178928053_jimena
+contraseña: =T2NspU#r6I*/
+
+
 $conexion= new mysqli("localhost", "u178928053_jimena", "=T2NspU#r6I", "u178928053_deudasf");
 
 $sql = "create table usuario (
