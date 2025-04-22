@@ -10,18 +10,16 @@
     
     <div class="container">
         <div class="container-form">
-            <form method="POST" action="inicio.php">
+            <form class="sign-in">
                 <h2>Iniciar sesión</h2>
                 <span>Use su correo y contraseña</span>
                 <div class="container-input">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" required><br><br>
+                    <input type="email" placeholder="Correo electrónico" >
                 </div>
                 <div class="container-input">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" name="contrasenha" id="contrasena" required>
+                    <input type="password" placeholder="Contraseña">
                 </div>
                 <button class="button">Iniciar sesión</button>
             </form>
@@ -29,43 +27,28 @@
 
         </div>
         <div class="container-form">
-            <form action="insert.php" method="post">
-                <h2>Registarse</h2>
-                <span>Use su correo electrónico para registrarse</span>
-                <div class="container-input">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                </div>
-    
-                <div class="container-input">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required><br><br>
-                </div>
-
-                <div class="container-input">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" name="usuario" required><br><br>
-                </div>
-    
-                
-                <div class="container-input">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" required><br><br>
-                </div>
-                
-    
-                <div class="container-input">
-                    <ion-icon name="lock-closed-outline"></ion-icon>
-                    <label for="contrasenha">Contraseña:</label>
-                    <input type="password" id="contrasenha" name="contrasenha" required><br><br>
-                </div>
-                <button class="button">Registrarse</button>
-            </form>
-        
+            <form class="sign-up"">
+            <h2>Registarse</h2>
+            <span>Use su correo electrónico para registrarse</span>
+            <div class="container-input">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" placeholder="Nombre" >
+            </div>
+            <div class="container-input">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" placeholder="Apellido" >
+            </div>
+            
+            <div class="container-input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Correo" >
+            </div>
+            <div class="container-input">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <button class="button">Registrarse</button>
+        </form>
         </div>
         <div class="conatiner-welcome">
             <div class="welcome-sign-up welcome">
@@ -100,7 +83,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="scrip.js"></script>
     <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
     <script  nomodule  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
 

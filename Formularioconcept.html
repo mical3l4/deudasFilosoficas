@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de publicaciones</title>
+    <link rel="stylesheet" href="concept.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>publicaciones</h2>
+        <form action="principal.php" method="POST">
+            <div class="input-group">
+                <label for="username">Titulo</label>
+                <input type="text" id="username" name="username" required aria-label="Titulo">
+            </div>
+            <div class="input-group">
+                <label for="Contenido">Contenido</label>
+                <input type="text" id="text" name="Contenido" required aria-label="Contraseña">
+            </div>
+            <button type="submit" class="btn">Publicar</button>
+        </form>
+    </div>
+</body>
+</html>

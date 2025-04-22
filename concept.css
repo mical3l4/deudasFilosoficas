@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #00ffea, rgb(0, 154, 192));
+    background: linear-gradient(to right, #686edb, #7578af);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,13 +58,13 @@ input {
 }
 
 input:focus {
-    border-color: #00ffea;
+    border-color: #757cf7;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background-color: #00ffea;
+    background-color: #757cf7;
     color: white;
     border: none;
     border-radius: 5px;
@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #00ffea;
+    background-color: #757cf7;
 }
 
 button:active {
