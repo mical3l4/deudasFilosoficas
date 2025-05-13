@@ -13,7 +13,7 @@ $sql = "create table usuario (
     usuario varchar(250),
     contrasenha text,
     correo text
-);
+)
 ";
 
 $conexion->query(query: $sql);
@@ -22,7 +22,7 @@ $sql = "create table inicio_sesion (
     id INT auto_increment primary key not null,
     correo text,
     contrasenha varchar(255) not null
-    );
+    )
 ";
 
 $conexion->query(query: $sql);
@@ -32,7 +32,7 @@ $sql ="CREATE TABLE publicaciones (
     contenido TEXT NOT NULL,
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     nombre_imagen VARCHAR(255)
-);"
+)"
 ;
 $conexion->query(query: $sql);
 
