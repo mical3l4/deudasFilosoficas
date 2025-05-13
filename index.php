@@ -28,7 +28,7 @@
         }
 
   
-        $sql = "SELECT id, contenido, nombre_imagen, DATE_FORMAT(fecha, '%d/%m/%Y %H:%i') AS fecha FROM publicaciones ORDER BY fecha_creacion DESC";
+        $sql = "SELECT id, contenido, nombre_imagen, DATE_FORMAT(fecha, '%d/%m/%Y %H:%i') AS fecha FROM publicaciones ORDER BY fecha DESC";
         $resultado = $conexion->query($sql);
 
         if ($resultado->num_rows > 0) {
