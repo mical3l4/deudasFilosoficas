@@ -30,7 +30,7 @@ $conexion->query(query: $sql);
 $sql ="CREATE TABLE publicaciones (
     id INT AUTO_INCREMENT PRIMARY KEY,
     contenido TEXT NOT NULL,
-    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     nombre_imagen VARCHAR(255)
 )"
 ;
