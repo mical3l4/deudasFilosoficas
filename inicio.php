@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // La contraseña es correcta, iniciar sesión
             $_SESSION['correo'] = $row['correo'];
             //echo "Bienvenido, " . $_SESSION['correo'] . "!";
-            header("Location: principal.php");
+            header("Location: principal.html");
         } else {
             echo "Contraseña incorrecta.";
         }

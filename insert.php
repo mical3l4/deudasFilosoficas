@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "Usuario registrado correctamente";
-            header("Location: principal.php");
+            header("Location: principal.html");
         } else {
             echo "Error al registrar usuario: " . $stmt->error;
         }
