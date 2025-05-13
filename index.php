@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Publicaciones</h1>
+    <a href="principal.html">Volver a la página de inicio</a>
 
     <h2>Nueva Publicación</h2>
     <form id="formulario-publicacion" action="guardar_publicacion.php" method="POST" enctype="multipart/form-data">
