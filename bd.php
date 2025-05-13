@@ -27,11 +27,11 @@ $sql = "create table inicio_sesion (
 
 $conexion->query(query: $sql);
 
-$sql ="create table publicaciones (
-    id INT auto_increment primary key not null,
-    titulo varchar(255), 
-    descripcion text, 
-    fecha date
+$sql ="CREATE TABLE publicaciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    contenido TEXT NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    imagen VARCHAR(255)
 );"
 ;
 $conexion->query(query: $sql);

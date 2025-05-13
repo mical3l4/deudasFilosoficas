@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap');
+
+body {
+    font-family: "Sansation", sans-serif;
+    margin: 20px;
+    background-color: #757cf7;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+#contenedor-publicaciones {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.publicacion {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.publicacion:last-child {
+    border-bottom: none;
+}
+
+.publicacion p {
+    margin: 5px 0;
+}
+
+.publicacion small {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.eliminar-btn {
+    background-color: #757cf7;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    align-self: flex-start;
+}
+
+.eliminar-btn:hover {
+    background-color: #c82333;
+}
+
+#formulario-publicacion {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulario-publicacion button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#formulario-publicacion button:hover {
+    background-color: #0056b3;
+}

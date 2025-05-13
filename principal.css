@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -46,4 +49,34 @@ h3{
 
 li :hover{
     text-decoration: underline;
+}
+
+#segundotitulo{
+    text-align: center;
+}
+
+#p1{
+    font-family: "Sansation", sans-serif;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    font-size: 150%;
+}
+#p2{
+    font-family: "Sansation", sans-serif;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4%;
+    font-size: 150%;
+}
+
+#p3{
+    padding-top: 4%;
+    font-family: "Sansation", sans-serif;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 150%;
 }

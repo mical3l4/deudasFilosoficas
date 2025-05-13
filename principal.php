@@ -14,35 +14,26 @@
         <header>
            <h3>Deudas filosoficas</h3> 
             <nav>
-                <a href="Formularioconcept.html">Sube una deuda</a>
-                <a href="?seccion=revisa">revisa las deudas</a>
-                <a href="index.html">Inicia Sessión</a>
-                <a href="?seccion=inicio">Inicio</a>
+                <a href="index.php">Sube una deuda</a>
+                <a href="index.html">Inicia Sesión</a>
+                
             </nav>
         </header>
-        <?php
-        $seccion = isset($_GET["seccion"]) ? $_GET["seccion"] : "";
-        switch($seccion){
-            case "sube":
-                echo '❤️❤️';
-            break;
-            case "revisa":
-                echo '<div class="texto">
-                        <h2 class="text-center">{$fila["titulo"]}</h2>
-                        <p>{$fila["descripcion"]}</p> 
-                        </div>';
-            break;
-            case "inicia":
-                echo '😊';
-            break;
-            case "inicio":
-                echo "<div class='texto'>
-                        <h2 class='text-center'>{$fila['titulo']}</h2>
-                        <p>{$fila['descripcion']}</p> 
-                        </div>";
-            break;
-        }
-        ?>
+       
     </div>
+
+    <h1 id="segundotitulo">Las deudas filosóficas</h1>
+
+<p id="p1">¿Alguna vez te has sentido en deuda con una idea que te transformó? ¿O quizás crees que la humanidad entera tiene cuentas pendientes con ciertos pensadores del pasado?
+
+En el laberíntico reino de las "deudas filosóficas", las obligaciones no se miden en guaraníes ni en dólares, sino en la influencia intangible de las ideas, en el legado profundo de las preguntas trascendentales y en el impacto duradero de las cosmovisiones.</p>
+
+<p id="p2" >Imagina deberle a Platón la concepción de un mundo de las Ideas que aún resuena en nuestros debates sobre la realidad y la verdad. O sentir una deuda con Simone de Beauvoir por abrir caminos hacia la comprensión de la existencia femenina. Tal vez la humanidad tenga una deuda colectiva con aquellos que desafiaron el status quo, sembrando las semillas del progreso social y ético.
+
+Estas deudas no se pagan con intereses ni se reclaman en juzgados.</p>
+
+<p id="p3"> Se honran a través del diálogo continuo, la reinterpretación constante y la construcción de nuevos conocimientos sobre los cimientos del pensamiento ancestral. Cada vez que reflexionamos sobre la justicia, la libertad, la existencia o el bien común, estamos, de alguna manera, saldando una pequeña parte de estas "deudas filosóficas".
+
+¿Qué "deudas filosóficas" crees que tenemos hoy en día? ¿A qué pensadores sientes que les debemos una reflexión profunda? ¿Qué nuevas ideas están generando deudas para el futuro?</p>
 </body>
 </html>
