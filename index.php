@@ -43,8 +43,8 @@
     <h2>Nueva Publicación</h2>
     <form id="formulario-publicacion" action="guardar_publicacion.php" method="POST" enctype="multipart/form-data">
         <textarea name="contenido" rows="4" cols="50" required></textarea><br><br>
-        <label for="imagen">Seleccionar imagen:</label>
-        <input type="file" name="imagen" id="nombre_imagen" accept="image/*"><br><br>
+        <label for="nombre_imagen">Seleccionar imagen:</label>
+        <input type="file" name="nombre_imagen" id="nombre_imagen" accept="image/*"><br><br>
         <button type="submit">Publicar</button>
     </form>
 
