@@ -2,7 +2,7 @@
 require_once("conexion.php");
 $titulo=$_POST['$titulo'];
 $descripcion=$_POST['$descripcion'];
-$fecha=$_POST['$fecha'];
+$fecha_creacion=$_POST['$fecha'];
 
 $sql="update from publicaciones where titulo =".$titulo,"descripcion=".$descripcion,
-"fecha=".$fecha;
+"fecha=".$fecha_creacion;

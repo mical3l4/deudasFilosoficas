@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $contrasenha = $_POST['contrasenha'];
 
     // Conectar a la base de datos
-    $conn = new mysqli('localhost', 'root', '', 'prueba1');
+    $conn = new mysqli("localhost", "u178928053_jimena", "=T2NspU#r6I", "u178928053_deudasf");
 
     // Verificar la conexión
     if ($conn->connect_error) {

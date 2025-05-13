@@ -12,8 +12,7 @@
     <div id="contenedor-publicaciones">
         <?php
        
-        $conexion = new mysqli("localhost", "root", "", "publi");
-
+        $conexion = new mysqli("localhost", "u178928053_jimena", "=T2NspU#r6I", "u178928053_deudasf");
         if ($conexion->connect_error) {
             die("Error de conexión: " . $conexion->connect_error);
         }
