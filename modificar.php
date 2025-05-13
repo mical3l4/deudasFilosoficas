@@ -1,8 +1,8 @@
 <?php
 require_once("conexion.php");
-$titulo=$_POST['$titulo'];
+$contenido=$_POST['$contenido'];
 $descripcion=$_POST['$descripcion'];
 $fecha_creacion=$_POST['$fecha'];
 
-$sql="update from publicaciones where titulo =".$titulo,"descripcion=".$descripcion,
+$sql="update from publicaciones where titulo =".$contenido,"descripcion=".$descripcion,
 "fecha=".$fecha_creacion;

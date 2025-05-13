@@ -3,7 +3,7 @@
 include 'conexion.php';
 
 // Datos de ejemplo
-$titulo = "Mi primera publicación";
+$contenido = "Mi primera publicación";
 $descripcion = "Esta es una prueba de publicación";
 $fecha = date("Y-m-d H:i:s"); // Fecha actual
 
@@ -12,7 +12,7 @@ $sql = "INSERT INTO publicaciones (id, titulo, descripcion, fecha) VALUES (NULL,
 
 // Preparar la consulta
 $stmt = $conexion->prepare($sql);
-$stmt->bind_param("sss", $titulo, $descripcion, $fecha);
+$stmt->bind_param("sss", $contenido, $descripcion, $fecha);
 
 if ($stmt->execute()) {
     echo "Publicación agregada correctamente";
