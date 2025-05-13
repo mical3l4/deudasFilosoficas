@@ -32,8 +32,6 @@ En el laberíntico reino de las "deudas filosóficas", las obligaciones no se mi
 
 Estas deudas no se pagan con intereses ni se reclaman en juzgados.</p>
 
-<p id="p3"> Se honran a través del diálogo continuo, la reinterpretación constante y la construcción de nuevos conocimientos sobre los cimientos del pensamiento ancestral. Cada vez que reflexionamos sobre la justicia, la libertad, la existencia o el bien común, estamos, de alguna manera, saldando una pequeña parte de estas "deudas filosóficas".
 
-¿Qué "deudas filosóficas" crees que tenemos hoy en día? ¿A qué pensadores sientes que les debemos una reflexión profunda? ¿Qué nuevas ideas están generando deudas para el futuro?</p>
 </body>
 </html>
