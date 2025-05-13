@@ -8,13 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id"])) {
         die("Error de conexión: " . $conexion->connect_error);
     }
 
-    $sql_select = "SELECT imagen FROM publicaciones WHERE id = ?";
+    $sql_select = "SELECT nombre_imagen FROM publicaciones WHERE id = ?";
     $stmt_select = $conexion->prepare($sql_select);
     $stmt_select->bind_param("i", $id);
     $stmt_select->execute();
     $resultado_select = $stmt_select->get_result();
     $fila_imagen = $resultado_select->fetch_assoc();
-    $ruta_imagen_a_eliminar = $fila_imagen["imagen"];
+    $ruta_imagen_a_eliminar = $fila_imagen["nombre_imagen"];
     $stmt_select->close();
 
     $sql_delete = "DELETE FROM publicaciones WHERE id = ?";
