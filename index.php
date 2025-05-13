@@ -18,15 +18,15 @@
         }
 
   
-        $sql = "SELECT id, contenido, imagen, DATE_FORMAT(fecha_creacion, '%d/%m/%Y %H:%i') AS fecha FROM publicaciones ORDER BY fecha_creacion DESC";
+        $sql = "SELECT id, contenido, nombre_imagen, DATE_FORMAT(fecha, '%d/%m/%Y %H:%i') AS fecha FROM publicaciones ORDER BY fecha_creacion DESC";
         $resultado = $conexion->query($sql);
 
         if ($resultado->num_rows > 0) {
             while ($fila = $resultado->fetch_assoc()) {
                 echo '<div class="publicacion">';
                 echo '<p>' . htmlspecialchars($fila["contenido"]) . '</p>';
-                if (!empty($fila["imagen"])) {
-                    echo '<img src="' . htmlspecialchars($fila["imagen"]) . '" alt="Imagen de la publicación" style="max-width: 300px; height: auto; margin-bottom: 10px;">';
+                if (!empty($fila["nombre_imagen"])) {
+                    echo '<img src="' . htmlspecialchars($fila["nombre_imagen"]) . '" alt="Imagen de la publicación" style="max-width: 300px; height: auto; margin-bottom: 10px;">';
                 }
                 echo '<small>Publicado el ' . $fila["fecha"] . '</small>';
                 echo '<button class="eliminar-btn" data-id="' . $fila["id"] . '">Eliminar</button>';
@@ -44,7 +44,7 @@
     <form id="formulario-publicacion" action="guardar_publicacion.php" method="POST" enctype="multipart/form-data">
         <textarea name="contenido" rows="4" cols="50" required></textarea><br><br>
         <label for="imagen">Seleccionar imagen:</label>
-        <input type="file" name="imagen" id="imagen" accept="image/*"><br><br>
+        <input type="file" name="imagen" id="nombre_imagen" accept="image/*"><br><br>
         <button type="submit">Publicar</button>
     </form>
 
