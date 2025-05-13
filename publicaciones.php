@@ -1,13 +1,13 @@
 <?php
 // Conexión a la base de datos
-$conn = new mysqli('localhost', 'root', '', 'new');
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+$conexion= new mysqli("localhost", "u178928053_jimena", "=T2NspU#r6I", "u178928053_deudasf");
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
 }
 
 // Obtener todas las publicaciones de la tabla "entrada"
 $sql = "SELECT * FROM entrada ORDER BY created_at DESC";
-$result = $conn->query($sql);
+$result = $conexion->query($sql);
 ?>
 
 <!DOCTYPE html>
