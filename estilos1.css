@@ -89,11 +89,11 @@ textarea {
 a{
 
     font-family: "Sansation", sans-serif;
-    color: #babce6;
+    color: #646adf;
     text-decoration: none;
 }
 
-.editar-btn {
+a.editar-btn {
     background-color: #4CAF50; /* Un verde para indicar edición */
     color: white;
     padding: 8px 12px;
@@ -105,10 +105,10 @@ a{
     text-decoration: none; /* Para cuando se usa como enlace <a> */
 }
 
-.editar-btn:hover {
+a.editar-btn:hover {
     background-color: #45a049; /* Un verde más oscuro al pasar el ratón */
 }
 
-.editar-btn:active {
+a.editar-btn:active {
     background-color: #3e8e41; /* Un verde aún más oscuro al hacer clic */
 }
