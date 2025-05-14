@@ -86,12 +86,12 @@ textarea {
     background-color: #0056b3;
 }
 
-a{
+/*a{
 
     font-family: "Sansation", sans-serif;
     color: #babce6;
     text-decoration: none;
-}
+}*/
 
 .editar-btn {
     background-color: #4CAF50; /* Un verde para indicar edición */
