@@ -180,7 +180,7 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
 <body>
 
     <h2>Gestión de Usuarios</h2>
-    <a href="principal.php" class="btn volver">← Volver al Panel Principal</a>
+    <a href="principal.html" class="btn volver">← Volver al Panel Principal</a>
 
     <table>
         <tr>
