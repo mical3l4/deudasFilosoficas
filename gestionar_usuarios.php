@@ -38,22 +38,148 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos1.css">
     <title>Gestionar Usuarios</title>
+
     <style>
-        /*body { font-family: Arial, sans-serif; background-color: #ffeef5; color: #333; padding: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-        th { background-color: #f7a6c3; color: white; }
-        input[type="text"], input[type="email"] { padding: 5px; width: 90%; }
-        .btn { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
-        .editar { background-color: #ffc107; color: #333; }
-        .eliminar { background-color: #dc3545; color: white; }
-        .actualizar { background-color: #28a745; color: white; }
-        .volver { margin-top: 20px; display: inline-block; background-color: #007bff; color: white; }*/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #37474f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .volver {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2196f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .volver:hover {
+            background-color: #1976d2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3f51b5;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 8px;
+            width: calc(100% - 16px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9em;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .actualizar {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .actualizar:hover {
+            background-color: #45a049;
+        }
+
+        .eliminar {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .eliminar:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            table {
+                border: 0;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                display: block;
+                border-bottom: 2px solid #ddd;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                padding-left: 0.5em;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
     </style>
+
+
+
+
 </head>
 <body>
 
-    <h2>Panel de Gestión de Usuarios</h2>
+    <h2>Gestión de Usuarios</h2>
     <a href="principal.php" class="btn volver">← Volver al Panel Principal</a>
 
     <table>
