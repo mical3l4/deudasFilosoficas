@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Preparar consulta segura con prepare()
     $sql = "INSERT INTO usuario (nombre, apellido, usuario, contrasenha, correo) VALUES (?, ?, ?, ?, ?)";
-    
+
     $stmt = $conexion->prepare($sql);
 
     if ($stmt) {
@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             echo "Usuario registrado correctamente";
             header("Location: principal.html");
+            exit();
         } else {
             echo "Error al registrar usuario: " . $stmt->error;
         }

@@ -13,9 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("Conexión fallida: " . $conn->connect_error);
     }
 
-    // Buscar el usuario en la base de datos
-    $sql = "SELECT * FROM usuario WHERE correo = '$correo'";
-    $result = $conn->query($sql);
+    // Buscar el usuario en la base de datos usando sentencia preparada
+    $sql = "SELECT * FROM usuario WHERE correo = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $correo);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -24,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($contrasenha, $row['contrasenha'])) {
             // La contraseña es correcta, iniciar sesión
             $_SESSION['correo'] = $row['correo'];
-            //echo "Bienvenido, " . $_SESSION['correo'] . "!";
             header("Location: principal.html");
+            exit();
         } else {
             echo "Contraseña incorrecta.";
         }
@@ -33,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Usuario no encontrado.";
     }
 
+    $stmt->close();
     $conn->close();
 }
 ?>
