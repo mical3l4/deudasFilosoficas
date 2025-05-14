@@ -42,7 +42,7 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f8;
+            background-color:rgb(205, 164, 233);
             color: #333;
             padding: 20px;
             margin: 0;
@@ -57,7 +57,7 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
         .volver {
             display: inline-block;
             padding: 10px 15px;
-            background-color: #2196f3;
+            background-color:rgb(166, 91, 233);
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -66,7 +66,7 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
         }
 
         .volver:hover {
-            background-color: #1976d2;
+            background-color:rgb(160, 82, 212);
         }
 
         table {
@@ -86,7 +86,7 @@ $resultado = $conexion->query($sql_obtener) or die($conexion->error);
         }
 
         th {
-            background-color: #3f51b5;
+            background-color:rgb(130, 144, 223);
             color: white;
             font-weight: bold;
             text-align: center;
