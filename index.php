@@ -41,6 +41,8 @@
                 }
                 echo '<small>Publicado el ' . $fila["fecha"] . '</small>';
                 echo '<button class="eliminar-btn" data-id="' . $fila["id"] . '">Eliminar</button>';
+                // Añadir enlace de edición
+                echo '<a href="editar_publicacion.php?id=' . $fila["id"] . '">Editar</a>';
                 echo '</div>';
             }
         } else {
